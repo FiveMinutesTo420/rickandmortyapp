@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+.character{
+    width: 50%;
+    margin: 0 auto;
+}
+.character-inner{
+    display: flex;
+    flex-direction: column;
+}
+.character-info{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+.list-info{
+    margin-top: 5px;
+}
+.list-info p{
+    margin-top: 2px;
+}
+.img{
+    width: 300px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 800px) {
+    .row {
+    display: flex;
+
+        flex-direction: column;
+    }
+    .character-info{
+        margin-left: 0;
+    }
+    .img{
+
+    }
+
+  }

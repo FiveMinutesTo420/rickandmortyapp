@@ -1,0 +1,11 @@
+<div class="custom-table">
+    <div class="row header">
+      <div class="photo">Photo</div>
+      <div class="name">Name</div>
+      <div class="gender">Gender</div>
+    </div>
+    <div *ngIf="characters">
+        <app-character *ngFor="let character of characters.results"  [character] = character></app-character>
+        <app-pagination [info]="characters.info" (pageChange)="onPageChange($event)"></app-pagination>
+    </div>
+</div>

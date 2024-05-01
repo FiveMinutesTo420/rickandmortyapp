@@ -1,0 +1,24 @@
+<div class="character" *ngIf="character">
+    <div class="character-inner">
+        <div class="row">
+            <div >
+                <img src="{{character.image}}" class="img" alt="">
+
+            </div>
+            <div class="character-info">
+                <h2>{{character.name}}</h2>
+                <div class="list-info">
+                    <p>Status: {{character.status}}</p>
+                    <p>Species: {{character.species}}</p>
+
+                    <p>Gender: {{character.gender}}</p>
+                    <p>Episodes:</p>
+                    <div *ngFor="let episode of episodes">
+                        <b>{{episode.name}} | {{episode.air_date}}</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a routerLink="">Go back</a>
+</div>

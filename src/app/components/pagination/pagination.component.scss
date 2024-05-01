@@ -1,0 +1,24 @@
+.buttons{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.button{
+    border:0px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #87eb9c;
+}
+@media only screen and (max-width: 600px) {
+    .buttons {
+      width: 100%;
+      padding: 10px 0px;
+    }
+  }

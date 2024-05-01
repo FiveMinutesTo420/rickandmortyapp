@@ -1,0 +1,5 @@
+<div *ngIf="info" class="buttons">
+    <button *ngIf="info.prev" class="button" (click)="onChangePage(info.prev)">Previous</button>
+    Страница {{count}} из {{info.pages}}
+    <button *ngIf="info.next" class="button" (click)="onChangePage(info.next)">Next</button>
+</div>

@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.name {
+    flex: 1;
+    padding: 10px;
+    color:black;
+    font-weight:700;
+}
+.img{
+    width: 100px;
+}
+.gender {
+    width: 100px;
+    text-align: center;
+}
+.row:hover{
+    background-color: #f1f1f1;
+}
